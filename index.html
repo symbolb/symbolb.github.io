@@ -1,46 +1,109 @@
 <!DOCTYPE html>
 <html>
-<script type="text/x-mathjax-config;executed=true">
-  MathJax.Hub.Config({ TeX: { equationNumbers: {autoNumber: "AMS"} } });
-</script>
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-MML-AM_HTMLorMML-full"> </script>
+    
+    <head>
+        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-MML-AM_HTMLorMML-full"> 
+        
+        </script>
+        
+        <style>
+            h1,h2,h3,h4,strong {
+                color:black;text-align:center;
+            }
+            
+            p {
+                color:black;text-align:justify;
+            }
+    
+        </style>
+    </head>
+    
     <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
-    <hr>
-    <hr>
-    <hr>
-    <hr>
-    <hr>
+    
+        <header>
+        
+            <h1>
+                symbol b
+            </h1>
+            
+            <h2>
+                be simple
+            </h2>
+           
+            <h3>
+                Random thoughts about engineering, economics, and science.
+            </h3>
+            
+        </header>
+        
+        <article>
+       
+            <hr>
+            
+            <h2>
+                How does a project's delay change its rate of return (ROR)?
+            </h2>
+            
+            <p>
+                When evaluating an economic opportunity using net cashflows from financial forecasts, the Net Present Value method is commonly used by engineers to value a project. The famous formula for discounting projects is:
+            </p>
+            
+            <p>
+                $$NPV=\sum_{k=0}^n\frac{C_k}{(1+i)^k}\tag{1}$$
+            </p>
+            
+            <p>
+                where `NPV` is the Net Present Value, `C` is the net cashflow, `k` is the period in years or months forecasted, `n` is the maximum period of the economic evaluation, and `i` is the discount interest rate.
+            </p>
+            
+            <p>
+                Three useful results from Eq.1 include:
+                <ol>
+                    <li>Net Present Value `NPV`</li>
+                    <li>Rate of Return `ROR`</li>
+                    <li>Payback Period</li>
+                </ol>
+            </p>
 
+            <p>
+                The `ROR` is determined by setting `NPV` to zero and solving for `i` iteratively.  
+            </p>    
 
-    
-    <p>Example: Solving the quadratic equation.
-Suppose `ax^2+b x+c=0` and `a!=0`. We first divide by `a` to get `x^2+b/a x+c/a=0`. 
+            <p>
+                If a project is delayed a year, and all the net cashflows remain unchanged, the `NPV` will decrease by a factor of `1/(1+i)` as shown. 
+            </p>    
 
-Then we complete the square and obtain `x^2+b/a x+(b/(2a))^2-(b/(2a))^2+c/a=0`. 
-The first three terms factor to give `(x+b/(2a))^2=(b^2)/(4a^2)-c/a`.
-Now we take square roots on both sides and get `x+b/(2a)=+-sqrt((b^2)/(4a^2)-c/a)`.
+            <p>
+                $$NPV_{delayed}=\frac{1}{(1+i)}NPV\tag{2}$$
+            </p>    
 
-Finally we subtract `b/(2a)` from both sides and simplify to get the two solutions: 
-`x_(1,2)=(-b+-sqrt(b^2 - 4a c))/(2a)`
-    </p>
-    
-    
-    <hr>
-    <hr>
-    
-    <p>Example</p>
-    <p>`ax^2+b x+c=0`</p>
-    <p>Then this means that:</p>
-    <p>`a!=0`</p>
-    <p>$$E=mc^2\tag{1}$$$$E=mc^2\tag{2}$$</p>
-    
-    <p>$$NPV=\sum_{k=1}^n\frac{CF_k}{(1+i)^k}          \tag{3}$$</p>
-    
-    <p>$$NPV=\sum_{k=1}^n\frac{CF_k}{(1+i)^k}         $$</p>
-    
-    <p></p>
+            <p>
+                So what happens to the `ROR` when all the cashflows, including the initial capital investments, are shifted in the schedule by a year? Because the `NPV` is set to zero, it can be algebraically proven that the `ROR`, unintuitively, <strong>doesn't change</strong>.  
+            </p> 
+
+            <p>
+                $$NPV_{delayed}=\frac{1}{(1+i)}\sum_{k=0}^n\frac{C_k}{(1+i)^k}=0\tag{3}$$
+            </p> 
+
+            <p>
+                $$NPV_{delayed}=\sum_{k=0}^n\frac{C_k}{(1+i)^k}=NPV\tag{4}$$
+            </p>              
+            
+            <p>
+                So, again assuming that the net cashflows remain unchanged, an unstarted project delay only impacts the `NPV` and not the `ROR`.
+            </p>            
+            
+            <p>
+                Last edited on 2018-12-31 by symbolb
+            </p>
+        
+        </article>
+            
+
+  
+    <!--
+
+    -->
    
 
     </body>
