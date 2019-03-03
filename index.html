@@ -1,149 +1,27 @@
-<!DOCTYPE html>
-<html>
-    
-    <head>
-        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-MML-AM_HTMLorMML-full"> 
-        
-        </script>
-        
-        <style>
-            h1,h2,h3,h4,strong {
-                color:black;text-align:center;
-            }
-            
-            p {
-                color:black;text-align:justify;
-            }
-    
-        </style>
-    </head>
-    
-    <body>
-    
-        <header>
-        
-            <h1>
-                symbol b
-            </h1>
-            
-            <h2>
-                be simple
-            </h2>
-           
-            <h3>
-                Random thoughts about engineering, economics, and science.
-            </h3>
-            
-        </header>
-        
-        <article>
-       
-            <hr>
-            
-            <h2>
-                Will Canadian universities introduce SATs into their admissions process?
-            </h2>
-            
-            <p>
-                In the past few years, Canadian universities such as the University of Toronto, the University of British Columbia, and McGill University, have seen an incredible increase in the grade point averages high school students need to be admitted.
-            </p>
-            
-            <p>
-                In the early 2000s, 90%+ averages easily admitted you into almost any faculty. Today, to study science or engineering for instance, a 95% average isn’t enough to guarantee admission! With so many students achieving high grades due to hard work, lack of provincial exams required, and grade inflation, how can universities continue to differentiate between the most capable students?
+---
+layout: base
+---
+<div class="wrapper">
+    <header>
+        {% if site.compass.logo %}
+        <div class="logo-container">
+          <a class="logo" href="{{ page.baseurl }}" style="background-image: url('{{ site.baseurl }}{{ site.compass.logo }}')"></a>
+        </div>
+        {% endif %}
 
-            </p>
-                
-            <p>
-                SATs.
-            </p>
-            
-            <p>
-                The SAT exam is a standardized exam written by all high school students for entrance into universities and colleges in America. The multiple-choice exam consists of questions testing mathematics, reading, and writing skills. 
-            </p>
-            
-            <p>
-                I’ve never had to do the SAT and I don’t believe that it’s an effective measure for determining admissibility to competitive programs. But I can’t imagine Canadian universities will apply specific entrance exams for each faculty to find the best candidates. The SAT, at the least, provides a method to rank students, even if it may seem like an unnecessary exercise.
-            </p>
-            
-            <p>
-                As grades continue to inflate over the next five years, I forecast that Canadian universities will begin requiring SAT exam scores for admission.   
-            </p>            
-            
-            <p>
-                Last edited on 2019-01-02 by symbolb
-            </p>
-            
-        </article>
-        
-        <article>
-       
-            <hr>
-            
-            <h2>
-                How does a project's delay change its rate of return (ROR)?
-            </h2>
-            
-            <p>
-                When evaluating an economic opportunity using net cashflows from financial forecasts, the Net Present Value method is commonly used by engineers to value a project. The famous formula for discounting projects is:
-            </p>
-            
-            <p>
-                $$NPV=\sum_{k=0}^n\frac{C_k}{(1+i)^k}\tag{1}$$
-            </p>
-            
-            <p>
-                where `NPV` is the Net Present Value, `C` is the net cashflow, `k` is the period in years or months forecasted, `n` is the maximum period of the economic evaluation, and `i` is the discount interest rate.
-            </p>
-            
-            <p>
-                Three useful results from Eq.1 include:
-                <ol>
-                    <li>Net Present Value `NPV`</li>
-                    <li>Rate of Return `ROR`</li>
-                    <li>Payback Period</li>
-                </ol>
-            </p>
+        {% if site.compass.author %}
+        <div class="author-container"><h1>{{ site.compass.author }}</h1></div>
+        {% endif %}
 
-            <p>
-                The `ROR` is determined by setting `NPV` to zero and solving for `i` iteratively.  
-            </p>    
-
-            <p>
-                If a project is delayed a year, and all the net cashflows remain unchanged, the `NPV` will decrease by a factor of `1/(1+i)` as shown. 
-            </p>    
-
-            <p>
-                $$NPV_{delayed}=\frac{1}{(1+i)}NPV\tag{2}$$
-            </p>    
-
-            <p>
-                So what happens to the `ROR` when all the cashflows, including the initial capital investments, are shifted in the schedule by a year? Because the `NPV` is set to zero, it can be algebraically proven that the `ROR`, unintuitively, <strong>doesn't change</strong>.  
-            </p> 
-
-            <p>
-                $$NPV_{delayed}=\frac{1}{(1+i)}\sum_{k=0}^n\frac{C_k}{(1+i)^k}=0\tag{3}$$
-            </p> 
-
-            <p>
-                $$NPV_{delayed}=\sum_{k=0}^n\frac{C_k}{(1+i)^k}=NPV\tag{4}$$
-            </p>              
-            
-            <p>
-                So, again assuming that the net cashflows remain unchanged, an unstarted project delay only impacts the `NPV` and not the `ROR`. `ROR` is usually the target result teams try to optimize but need to be careful not to overvalue it compared to `NPV`.
-            </p>            
-            
-            <p>
-                Last edited on 2018-12-31 by symbolb
-            </p>
-        
-        </article>
-            
-
-  
-    <!--
-
-    -->
-   
-
-    </body>
-</html>
+        {% if site.compass.tagline %}
+        <div class="tagline-container"><p>{{ site.compass.tagline }}</p></div>
+        {% endif %}
+    </header>
+    <main>
+      {% if site.compass.include_content %}
+      <div class="content">
+        {% include content.html %}
+      </div>
+      {% endif %}
+    </main>
+</div>
