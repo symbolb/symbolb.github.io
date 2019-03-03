@@ -1,94 +1,289 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
   <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Compass &#8226; The Jekyll theme for your personal landing page</title>
 
-  <link rel="apple-touch-icon" href="/images/compass.png"/>
-  <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="http://localhost:4000/favicon.ico" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-  <link rel="stylesheet" href="/assets/normalize.css">
-  <link rel="stylesheet" href="/assets/main.css">
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+  <title>Stylish Portfolio - Start Bootstrap Theme</title>
 
-  <link rel="canonical" href="http://localhost:4000/">
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
-  <meta name="author" content="Compass">
-  <meta name="description" content="The <a href='http://jekyllrb.com'>Jekyll</a> theme for your personal landing page"/>
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.css" rel="stylesheet">
 
-  <!-- Open Graph tags -->
-  <meta property="og:type" content="website"/>
-  <meta property="og:title" content="The <a href='http://jekyllrb.com'>Jekyll</a> theme for your personal landing page"/>
-  <meta property="og:url" content="http://localhost:4000/"/>
-  <meta property="og:image" content="http://localhost:4000/images/compass.png"/>
-  <meta property="og:description" content=""/>
-  <meta property="og:site_name" content="The <a href='http://jekyllrb.com'>Jekyll</a> theme for your personal landing page">
+  <!-- Custom Fonts -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
-  <!-- Twitter Card tags -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="The <a href='http://jekyllrb.com'>Jekyll</a> theme for your personal landing page">
-  
-  
-  <meta name="twitter:url" content="http://localhost:4000/">
-  <meta name="twitter:description" content="">
-  <meta name="twitter:image:src" content="http://localhost:4000/images/compass.png">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
 
-  
 </head>
 
-  <body>
 
-  <div class="wrapper">
-    <header>
-        
-        <div class="logo-container">
-          <a class="logo" href="" style="background-image: url('/images/compass.png')"></a>
-        </div>
-        
+<body>
 
-        
-        <div class="author-container"><h1>Compass</h1></div>
-        
+  <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+<nav id="sidebar-wrapper">
+  <ul class="sidebar-nav">
+    <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+    <li class="sidebar-brand">
+      <a href="#top"  onclick = $("#menu-close").click(); >Start Bootstrap</a>
+    </li>
+    <li>
+      <a href="#top" onclick = $("#menu-close").click(); >Home</a>
+    </li>
+    <li>
+      <a href="#about" onclick = $("#menu-close").click(); >About</a>
+    </li>
+    <li>
+      <a href="#services" onclick = $("#menu-close").click(); >Services</a>
+    </li>
+    <li>
+      <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
+    </li>
+    <li>
+      <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
+    </li>
+  </ul>
+</nav>
 
-        
-        <div class="tagline-container"><p>The <a href='http://jekyllrb.com'>Jekyll</a> theme for your personal landing page</p></div>
-        
-    </header>
-    <main>
-      
-      <div class="content">
-        <h2>About Compass</h2>
-<p>Compass has been designed with something very specific in mind: to be a simple and elegant personal landing page.</p>
+  <header id="top" class="header">
+  <div class="text-vertical-center">
+    <h1>Start Bootstrap</h1>
+    <h3>Free Bootstrap Themes &amp; Templates</h3>
+    <br>
+    <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+  </div>
+</header>
 
-<h2>Features</h2>
-<ul>
-  <li>Responsive design</li>
-  <li>Mobile friendly</li>
-  <li>Easy deployment to <a href="https://pages.github.com/">GitHub Pages</a></li>
-</ul>
-
-<p>For more information, including setup and configuration instructions, bug reports or feature requests head over to <a href="https://github.com/excentris/compass">GitHub</a>.</p>
-
-<hr />
-
-<ul class="fa-ul main-list">
-  <li class="main-list-item">
-    <span class="fa fa-github fa-lg main-list-item-icon"></span>
-    <a href="https://github.com/excentris/compass">GitHub Repository</a>
-  </li>
-  <li class="main-list-item">
-    <span class="fa fa-user fa-lg main-list-item-icon"></span>
-    <a href="http://excentris.net">The Author</a>
-  </li>
-</ul>
-
+  <section id="about" class="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
+        <p class="lead">This theme features some wonderful photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
       </div>
-      
-    </main>
-</div>
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</section>
 
+  <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+<section id="services" class="services bg-primary">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-lg-10 col-lg-offset-1">
+        <h2>Our Services</h2>
+        <hr class="small">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="service-item">
+              <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+            </span>
+              <h4>
+                <strong>Service Name</strong>
+              </h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <a href="#" class="btn btn-light">Learn More</a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="service-item">
+              <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-compass fa-stack-1x text-primary"></i>
+            </span>
+              <h4>
+                <strong>Service Name</strong>
+              </h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <a href="#" class="btn btn-light">Learn More</a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="service-item">
+              <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-flask fa-stack-1x text-primary"></i>
+            </span>
+              <h4>
+                <strong>Service Name</strong>
+              </h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <a href="#" class="btn btn-light">Learn More</a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="service-item">
+              <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-shield fa-stack-1x text-primary"></i>
+            </span>
+              <h4>
+                <strong>Service Name</strong>
+              </h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <a href="#" class="btn btn-light">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- /.row (nested) -->
+      </div>
+      <!-- /.col-lg-10 -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</section>
 
-  </body>
+  <aside class="callout">
+  <div class="text-vertical-center">
+    <h1>Vertically Centered Text</h1>
+  </div>
+</aside>
+
+  <section id="portfolio" class="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 text-center">
+        <h2>Our Work</h2>
+        <hr class="small">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="portfolio-item">
+              <a href="#">
+                <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="portfolio-item">
+              <a href="#">
+                <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="portfolio-item">
+              <a href="#">
+                <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="portfolio-item">
+              <a href="#">
+                <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /.row (nested) -->
+        <a href="#" class="btn btn-dark">View More Items</a>
+      </div>
+      <!-- /.col-lg-10 -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</section>
+
+  <aside class="call-to-action bg-primary">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h3>The buttons below are impossible to resist.</h3>
+        <a href="#" class="btn btn-lg btn-light">Click Me!</a>
+        <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
+      </div>
+    </div>
+  </div>
+</aside>
+
+  <section id="map" class="map">
+  <iframe id="map_iframe"
+    width="100%"
+    height="100%"
+    frameborder="0"
+    scrolling="no"
+    marginheight="0"
+    marginwidth="0"
+    src="https://maps.google.com/maps/embed/v1/place?key=&q=,,"
+    allowfullscreen>
+  </iframe>
+  <br>
+  <small id="map_iframe"
+    width="100%"
+    height="100%"
+    frameborder="0"
+    scrolling="no"
+    marginheight="0"
+    marginwidth="0"
+    src="https://maps.google.com/maps/embed/v1/place?key=&q=,,"
+    allowfullscreen>
+  </small>
+</section>
+  <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 text-center">
+        <h4><strong></strong>
+        </h4>
+        <p>
+          
+          <br>
+          
+          <br>
+          
+        </p>
+        <ul class="list-unstyled">
+          <li><i class="fa fa-phone fa-fw"></i> </li>
+          <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:"></a>
+          </li>
+        </ul>
+        <br>
+        <ul class="list-inline">
+          <li>
+            <a href="https://facebook.com/"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+          </li>
+          <li>
+            <a href="https://github.com/"><i class="fa fa-github fa-fw fa-3x"></i></a>
+          </li>
+        </ul>
+        <hr class="small">
+        <p class="text-muted">Copyright &copy;  2019</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="js/custom.js"></script> 
+
+  
+</body>
+
 </html>
