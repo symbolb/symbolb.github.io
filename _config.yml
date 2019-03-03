@@ -1,28 +1,31 @@
+url: symbolb.com
+baseurl:
+
 # Site settings
-title:
-email:
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+title: Symbol B
+email: support@symbolb.com
+description: ""
 
-# User setting
-owner:
-email:
-facebook_username:
-twitter_username:
-github_username:
+# Team names, titles and social links
+people:
+- name: First Last
+  pic: 1
+  position: Senior Manager
+
+- name: First Last
+  pic: 2
+  position: Technical Development Lead
+
+- name: First Last
+  pic: 3
+  position: Sales & Training Lead
+
+
+# Postal address (add as many lines as necessary)
 address:
-  - line:
-  - line:
-  # Feel free to add more lines here 
-telephone:
-copyright:
-
-# API settings
-google_api_key:
+  - line: Calgary
+  - line: Alberta, CA
 
 # Build settings
 markdown: kramdown
+permalink: pretty
