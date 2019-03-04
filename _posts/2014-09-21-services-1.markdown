@@ -1,8 +1,8 @@
 ---
 layout: default
-img: ipad.png
+img: Fractures.png
 category: Services
-title: Survey
+title: Fracture Better
 description: |
 ---
-  Do it Better!
+  Design directional surveys and fracture placements easily for visualizing your pads and ensuring accurate spacing.
