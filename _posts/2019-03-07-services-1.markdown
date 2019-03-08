@@ -2,7 +2,7 @@
 layout: default
 img: Demo01.gif
 category: Services
-title: Create Survey & Fracture Designs Easily
+title: Create Survey & Fracture Designs
 description: |
 ---
   Design directional surveys and fracture placements easily for visualizing your pads and ensuring accurate spacing.
