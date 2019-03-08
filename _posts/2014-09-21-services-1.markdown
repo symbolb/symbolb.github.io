@@ -1,8 +1,0 @@
----
-layout: default
-img: Fractures.png
-category: Services
-title: Fracture Better
-description: |
----
-  Design directional surveys and fracture placements easily for visualizing your pads and ensuring accurate spacing.

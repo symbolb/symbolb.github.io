@@ -1,0 +1,8 @@
+---
+layout: default
+img: Training.jpg 
+category: Services
+title: Training & Support
+description: |
+---
+  Personalized training is provided to ensure you're maximizing the use of our innovative software. PlannedWell&trade; is available for Windows, Mac, & Linux.
